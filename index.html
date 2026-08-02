@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracknite — Support</title>
+<style>
+  :root{
+    --bg:#0A0A0F; --canvas:#050507; --card:#14151D; --stroke:#23242F;
+    --cyan:#00E5FF; --pink:#FF39B8; --gold:#FFC733; --purple:#A657F0;
+    --text:#FFFFFF; --muted:rgba(255,255,255,.55); --faint:rgba(255,255,255,.38);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Text","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.55;
+    background-image:
+      radial-gradient(900px 500px at 15% -10%, rgba(0,229,255,.10), transparent 60%),
+      radial-gradient(800px 500px at 100% 0%, rgba(166,87,240,.10), transparent 55%);
+    min-height:100vh;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 20px 72px}
+  .logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:8px}
+  .crown{font-size:30px}
+  h1{font-size:34px;font-weight:800;letter-spacing:-.5px;margin:14px 0 6px}
+  .tagline{color:var(--muted);font-size:16px;margin:0 0 34px}
+  .accent{color:var(--cyan)}
+  .card{
+    background:var(--card);border:1px solid var(--stroke);border-radius:18px;
+    padding:22px 22px;margin:16px 0;
+  }
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:1.2px;color:var(--cyan);margin:0 0 14px;font-weight:700}
+  .contact a{color:var(--text);text-decoration:none;font-weight:600;font-size:17px}
+  .contact a:hover{color:var(--cyan)}
+  .contact .label{display:block;color:var(--faint);font-size:12px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px;font-weight:600}
+  .row{margin-bottom:16px}
+  .row:last-child{margin-bottom:0}
+  .faq q{display:block;font-weight:700;font-size:16px;margin-bottom:5px;color:var(--text)}
+  .faq p{margin:0 0 18px;color:var(--muted);font-size:15px}
+  .faq div:last-child p{margin-bottom:0}
+  .links a{color:var(--cyan);text-decoration:none;font-weight:600}
+  .links a:hover{text-decoration:underline}
+  footer{margin-top:34px;color:var(--faint);font-size:13px;line-height:1.7}
+  q{quotes:none}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo"><span class="crown">👑</span><span style="font-weight:800;font-size:20px;letter-spacing:.5px">TRACKNITE</span></div>
+    <h1>Support &amp; <span class="accent">Help</span></h1>
+    <p class="tagline">Your daily Fortnite companion — stats, shop and island planner.</p>
+
+    <div class="card contact">
+      <h2>Contact us</h2>
+      <div class="row">
+        <span class="label">Email</span>
+        <a href="mailto:ignacy.myczkowski@icloud.com">ignacy.myczkowski@icloud.com</a>
+      </div>
+      <div class="row">
+        <span class="label">Phone</span>
+        <a href="tel:+48571474802">+48 571 474 802</a>
+      </div>
+    </div>
+
+    <div class="card faq">
+      <h2>Frequently asked</h2>
+      <div>
+        <q>Do I need an Epic Games account to use Tracknite?</q>
+        <p>No. There is no sign-in. Just search for a public player nickname and you're in.</p>
+      </div>
+      <div>
+        <q>Why can't I see some player's stats?</q>
+        <p>Stats are shown only for <strong>public</strong> profiles. If a profile is set to private in Fortnite, its stats stay private — that's normal, not an error.</p>
+      </div>
+      <div>
+        <q>Where is my session history stored?</q>
+        <p>Entirely on your device. Nothing about your history ever leaves your phone.</p>
+      </div>
+      <div>
+        <q>What does Tracknite Premium include?</q>
+        <p>Trends and full session history, player comparison, activity heatmap and seasons, esports &amp; Power Ranking, and the home-screen widget. It's an auto-renewing subscription with a 3-day free trial. Manage or cancel it anytime in your App Store account settings.</p>
+      </div>
+    </div>
+
+    <div class="card links">
+      <h2>Legal</h2>
+      <p style="margin:0;color:var(--muted);font-size:15px">Read our <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <footer>
+      Tracknite is an unofficial app, not affiliated with Epic Games, Inc.
+      Fortnite is a trademark of Epic Games, Inc. The app uses publicly available data only.<br>
+      © 2026 Tracknite. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
