@@ -44,13 +44,22 @@
   <div class="wrap">
     <a class="back" href="index.html">← Support</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 2, 2026</p>
+    <p class="updated">Last updated: August 11, 2026</p>
 
     <div class="card">
-      <p class="lead"><strong>Tracknite does not track you and does not collect your personal data.</strong> There are no accounts, no sign-in, no analytics and no advertising SDKs. This page explains exactly what the app does and does not do with data.</p>
+      <p class="lead"><strong>Tracknite does not track you and does not show ads.</strong> There is no Tracknite account to create, no analytics and no advertising SDKs. Signing in to your Epic Games account is entirely optional and is used only to show your own tournament results. This page explains exactly what the app does and does not do with data.</p>
 
-      <h2>No accounts, no sign-in</h2>
-      <p>You do not need an Epic Games account or any other login to use Tracknite. We never ask for a password and we never see your Epic credentials.</p>
+      <h2>No Tracknite account</h2>
+      <p>You never create a Tracknite account and you never give us a password. To see public stats, the item shop, islands and the tournaments calendar, you simply type a username — no sign-in of any kind is required.</p>
+
+      <h2>Optional: connecting your Epic account</h2>
+      <p>If you want to see <strong>your own</strong> tournament history and results ("My Events"), you can optionally connect your Epic Games account. This is never required to use the app. When you connect:</p>
+      <ul>
+        <li>Sign-in happens on <strong>Epic's own login page</strong> (opened in your browser) using Epic's official authorization flow. <strong>We never see, ask for, or store your Epic password.</strong></li>
+        <li>Instead of a password, the app receives a revocable access handle. The session token used to talk to Epic on your behalf is held only by our secure proxy server, solely to fetch your tournament data — it is never used for advertising and never shared.</li>
+        <li>Once connected, the app sends your <strong>Epic account identifier</strong> to Epic's public tournament services to retrieve your events, placements, points and team rosters.</li>
+        <li>You can disconnect anytime in <strong>Settings → Epic account</strong>. Disconnecting immediately deletes the stored handle and revokes the session token on our proxy and with Epic.</li>
+      </ul>
 
       <h2>Public data only</h2>
       <p>Tracknite shows Fortnite statistics for <strong>public</strong> player profiles only. If a profile is set to private, its stats stay private. When you look up a player, the only thing sent to the public Fortnite data services is the <strong>nickname you searched for</strong>, in order to fetch that player's public stats, cosmetics, shop and event data.</p>
