@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracknite — Privacy Policy</title>
+<style>
+  :root{
+    --bg:#0A0A0F; --card:#14151D; --stroke:#23242F;
+    --cyan:#00E5FF; --purple:#A657F0;
+    --text:#FFFFFF; --muted:rgba(255,255,255,.62); --faint:rgba(255,255,255,.38);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Text","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6;
+    background-image:
+      radial-gradient(900px 500px at 15% -10%, rgba(0,229,255,.10), transparent 60%),
+      radial-gradient(800px 500px at 100% 0%, rgba(166,87,240,.10), transparent 55%);
+    min-height:100vh;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 20px 72px}
+  a.back{color:var(--cyan);text-decoration:none;font-weight:600;font-size:14px}
+  a.back:hover{text-decoration:underline}
+  h1{font-size:32px;font-weight:800;letter-spacing:-.5px;margin:18px 0 4px}
+  .updated{color:var(--faint);font-size:13px;margin:0 0 30px}
+  .card{
+    background:var(--card);border:1px solid var(--stroke);border-radius:18px;
+    padding:8px 24px 24px;margin:16px 0;
+  }
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:1px;color:var(--cyan);margin:26px 0 10px;font-weight:700}
+  p{color:var(--muted);font-size:15px;margin:0 0 14px}
+  ul{color:var(--muted);font-size:15px;margin:0 0 14px;padding-left:20px}
+  li{margin-bottom:8px}
+  strong{color:var(--text)}
+  .lead{font-size:16px;color:var(--text);margin-top:14px}
+  a{color:var(--cyan)}
+  footer{margin-top:34px;color:var(--faint);font-size:13px;line-height:1.7}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Support</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: August 23, 2026</p>
+
+    <div class="card">
+      <p class="lead"><strong>Tracknite does not track you and does not show ads.</strong> There is no Tracknite account to create, no analytics and no advertising SDKs. Signing in to your Epic Games account is entirely optional and is used only to show your own tournament results. This page explains exactly what the app does and does not do with data.</p>
+
+      <h2>No Tracknite account</h2>
+      <p>You never create a Tracknite account and you never give us a password. To see public stats, the item shop, islands and the tournaments calendar, you simply type a username — no sign-in of any kind is required.</p>
+
+      <h2>Optional: connecting your Epic account</h2>
+      <p>If you want to see <strong>your own</strong> tournament history and results ("My Events"), you can optionally connect your Epic Games account. This is never required to use the app. When you connect:</p>
+      <ul>
+        <li>Sign-in happens on <strong>Epic's own login page</strong> (opened in your browser) using Epic's official authorization flow. <strong>We never see, ask for, or store your Epic password.</strong></li>
+        <li>Instead of a password, the app receives a revocable access handle. The session token used to talk to Epic on your behalf is held only by our secure proxy server, solely to fetch your tournament data — it is never used for advertising and never shared.</li>
+        <li>Once connected, the app sends your <strong>Epic account identifier</strong> to Epic's public tournament services to retrieve your events, placements, points and team rosters, and the list of in-game Sprites you have collected.</li>
+        <li>You can disconnect anytime in <strong>Settings → Epic account</strong>. Disconnecting immediately deletes the stored handle and revokes the session token on our proxy and with Epic.</li>
+      </ul>
+
+      <h2>Public data only</h2>
+      <p>Tracknite shows Fortnite statistics for <strong>public</strong> player profiles only. If a profile is set to private, its stats stay private. When you look up a player, the only thing sent to the public Fortnite data services is the <strong>nickname you searched for</strong>, in order to fetch that player's public stats, cosmetics, shop and event data.</p>
+
+      <h2>What stays on your device</h2>
+      <ul>
+        <li><strong>Session history, trends and replay analysis results</strong> are stored locally on your device (SwiftData). This data is never sent to us or to any third party.</li>
+        <li><strong>App settings</strong> (theme, language, favorite skin, default tab) are stored locally on your device.</li>
+        <li><strong>Notifications</strong> (e.g. a favorite skin returning to the shop) are scheduled locally on your device.</li>
+        <li><strong>Your saved map plans</strong> (drop routes, markers and zones) are stored on your device. When you share a plan, the image is created on your device and handed to the standard iOS share sheet — it goes only where you send it, and never to us.</li>
+      </ul>
+
+      <h2>Background refresh</h2>
+      <p>So that your history and rank chart keep filling in even when you are not using the app, iOS may wake Tracknite briefly in the background to fetch your public stats and save a snapshot. These background snapshots are exactly the same as the ones taken while the app is open: they stay on your device (and in your own iCloud, if sync is on), and nothing is sent to us. You can stop this at any time in the iOS Settings app under Tracknite → Background App Refresh.</p>
+
+      <h2>iCloud sync (your own account only)</h2>
+      <p>To keep your match history and replay analysis results after you delete or reinstall the app, Tracknite can sync them to <strong>your own private iCloud database</strong> (via Apple's CloudKit) — the same private storage used by apps like Notes or Reminders. The same applies to everything else that is yours: your app settings, player nickname, avatar, favorite skins and islands, and your saved map plans (via Apple's iCloud key-value storage), and — if you connected your Epic account — the revocable access handle described above, which is kept in your <strong>iCloud Keychain</strong>, Apple's end-to-end encrypted password storage. That way your setup survives reinstalling the app and carries over to your other devices. We do not have access to any of it; it stays inside your Apple ID and is never sent to our servers. You can turn this off anytime in <strong>Settings → Data → "iCloud sync"</strong>; the change takes effect after restarting the app. Turning it off stops future syncing but does not delete data already synced to iCloud — you can remove that separately from your device's iCloud storage settings.</p>
+
+      <h2>Third-party data services</h2>
+      <p>To show live stats and shop items, the app requests publicly available data from third-party Fortnite APIs. These requests contain only the searched nickname and standard technical information (such as your IP address, which any internet request necessarily includes). We do not attach any identifier to these requests and we do not build a profile of you.</p>
+
+      <h2>Subscriptions &amp; payments</h2>
+      <p>Tracknite Premium is an auto-renewing subscription sold through Apple's App Store. All payment processing is handled by Apple — the app never sees or stores your payment details. Purchase and subscription status is provided to the app by Apple's StoreKit. You can manage or cancel your subscription anytime in your App Store account settings.</p>
+
+      <h2>Data we do NOT collect</h2>
+      <ul>
+        <li>No personal information (name, email, address) — unless you choose to email our support.</li>
+        <li>No tracking across apps or websites, and no advertising identifiers.</li>
+        <li>No analytics or usage tracking.</li>
+        <li>No location data.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>Tracknite does not knowingly collect personal data from anyone, including children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, we will update this page and revise the date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email us at <a href="mailto:ignacy.myczkowski@icloud.com">ignacy.myczkowski@icloud.com</a> or call +48 571 474 802.</p>
+    </div>
+
+    <footer>
+      Tracknite is an unofficial app, not affiliated with Epic Games, Inc.
+      Fortnite is a trademark of Epic Games, Inc. The app uses publicly available data only.<br>
+      © 2026 Tracknite. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
