@@ -44,7 +44,7 @@
   <div class="wrap">
     <a class="back" href="index.html">← Support</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 29, 2026</p>
+    <p class="updated">Last updated: September 14, 2026</p>
 
     <div class="card">
       <p class="lead"><strong>Tracknite does not track you and does not show ads.</strong> There is no Tracknite account to create, no analytics and no advertising SDKs. Signing in to your Epic Games account is entirely optional and is used only to show your own tournament results. This page explains exactly what the app does and does not do with data.</p>
@@ -58,6 +58,7 @@
         <li>Sign-in happens on <strong>Epic's own login page</strong> (opened in your browser) using Epic's official authorization flow. <strong>We never see, ask for, or store your Epic password.</strong></li>
         <li>Instead of a password, the app receives a revocable access handle. The session token used to talk to Epic on your behalf is held only by our secure proxy server, solely to fetch your tournament data — it is never used for advertising and never shared.</li>
         <li>Once connected, the app sends your <strong>Epic account identifier</strong> to Epic's public tournament services to retrieve your events, placements, points and team rosters, and the list of in-game Sprites you have collected.</li>
+        <li>For duo, trio and squad tournaments, Epic only returns a result when the <strong>whole team</strong> is named. To find yours, the app may send Epic the account identifiers of your teammates — taken from your earlier tournaments, or from a player you search for in an event leaderboard — together with your own. These requests are used only to look up your team's result.</li>
         <li>You can disconnect anytime in <strong>Settings → Epic account</strong>. Disconnecting immediately deletes the stored handle and revokes the session token on our proxy and with Epic.</li>
       </ul>
 
@@ -67,6 +68,7 @@
       <h2>What stays on your device</h2>
       <ul>
         <li><strong>Session history, trends and replay analysis results</strong> are stored locally on your device (SwiftData). This data is never sent to us or to any third party.</li>
+        <li><strong>Your tournament archive</strong> — if you connected your Epic account: your placements, points, match counts, payouts and team rosters (teammates' nicknames and account identifiers) for tournaments you played. It is kept on your device so results don't disappear once Epic stops listing an event, and it is never sent to us.</li>
         <li><strong>App settings</strong> (theme, language, favorite skin, default tab) are stored locally on your device.</li>
         <li><strong>Notifications</strong> — a tournament reminder before a cup you marked starts, or a favorite skin returning to the shop — are scheduled <strong>locally</strong> on your device by iOS. We do not use a push service, we have no device token, and we never send you marketing messages. Which tournaments you set a reminder for stays on your device (and in your own iCloud, if sync is on). You can switch reminders off in <strong>Settings → Notifications</strong>, or revoke the permission entirely in the iOS Settings app.</li>
         <li><strong>Your saved map plans</strong> (drop routes, markers and zones) are stored on your device. When you share a plan, the image is created on your device and handed to the standard iOS share sheet — it goes only where you send it, and never to us.</li>
@@ -76,10 +78,13 @@
       <p>So that your history and rank chart keep filling in even when you are not using the app, iOS may wake Tracknite briefly in the background to fetch your public stats and save a snapshot. These background snapshots are exactly the same as the ones taken while the app is open: they stay on your device (and in your own iCloud, if sync is on), and nothing is sent to us. You can stop this at any time in the iOS Settings app under Tracknite → Background App Refresh.</p>
 
       <h2>iCloud sync (your own account only)</h2>
-      <p>To keep your match history and replay analysis results after you delete or reinstall the app, Tracknite can sync them to <strong>your own private iCloud database</strong> (via Apple's CloudKit) — the same private storage used by apps like Notes or Reminders. The same applies to everything else that is yours: your app settings, player nickname, avatar, favorite skins, tournament reminders and your saved map plans (via Apple's iCloud key-value storage), and — if you connected your Epic account — the revocable access handle described above, which is kept in your <strong>iCloud Keychain</strong>, Apple's end-to-end encrypted password storage. That way your setup survives reinstalling the app and carries over to your other devices. We do not have access to any of it; it stays inside your Apple ID and is never sent to our servers. You can turn this off anytime in <strong>Settings → Data → "iCloud sync"</strong>; the change takes effect after restarting the app. Turning it off stops future syncing but does not delete data already synced to iCloud — you can remove that separately from your device's iCloud storage settings.</p>
+      <p>To keep your match history, replay analysis results and tournament archive after you delete or reinstall the app, Tracknite can sync them to <strong>your own private iCloud database</strong> (via Apple's CloudKit) — the same private storage used by apps like Notes or Reminders. The same applies to everything else that is yours: your app settings, player nickname, avatar, favorite skins, tournament reminders and your saved map plans (via Apple's iCloud key-value storage), and — if you connected your Epic account — the revocable access handle described above, which is kept in your <strong>iCloud Keychain</strong>, Apple's end-to-end encrypted password storage. That way your setup survives reinstalling the app and carries over to your other devices. We do not have access to any of it; it stays inside your Apple ID and is never sent to our servers. You can turn this off anytime in <strong>Settings → Data → "iCloud sync"</strong>; the change takes effect after restarting the app. Turning it off stops future syncing but does not delete data already synced to iCloud — you can remove that separately from your device's iCloud storage settings.</p>
 
       <h2>Third-party data services</h2>
       <p>To show live stats and shop items, the app requests publicly available data from third-party Fortnite APIs. These requests contain only the searched nickname and standard technical information (such as your IP address, which any internet request necessarily includes). We do not attach any identifier to these requests and we do not build a profile of you.</p>
+
+      <h2>Replay analysis</h2>
+      <p>When you choose a <strong>.replay file</strong> to analyze, the file is uploaded through our proxy server to a third-party Fortnite replay parser, which returns the match data shown in the app. The file is used only to produce that analysis; we do not keep a copy. Because replay analysis has a shared daily limit, our proxy keeps a count of analyses per <strong>IP address</strong> for up to <strong>48 hours</strong>, solely to enforce that limit — it is not linked to any other data and is deleted automatically. The analysis results are then stored on your device, as described above.</p>
 
       <h2>Subscriptions &amp; payments</h2>
       <p>Tracknite Premium is an auto-renewing subscription sold through Apple's App Store. All payment processing is handled by Apple — the app never sees or stores your payment details. Purchase and subscription status is provided to the app by Apple's StoreKit. You can manage or cancel your subscription anytime in your App Store account settings.</p>
