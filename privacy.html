@@ -44,10 +44,10 @@
   <div class="wrap">
     <a class="back" href="index.html">← Support</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 18, 2026</p>
+    <p class="updated">Last updated: November 9, 2026</p>
 
     <div class="card">
-      <p class="lead"><strong>Tracknite does not track you and does not show ads.</strong> There is no Tracknite account to create, no analytics and no advertising SDKs. Signing in to your Epic Games account is entirely optional and is used only to show your own tournament results, Sprites and locker. This page explains exactly what the app does and does not do with data.</p>
+      <p class="lead"><strong>Tracknite does not track you and does not show ads.</strong> There is no Tracknite account to create, no analytics and no advertising SDKs. Signing in to your Epic Games account is entirely optional and is used only to show your own tournament results, Sprites, locker and current season level. This page explains exactly what the app does and does not do with data.</p>
 
       <h2>No Tracknite account</h2>
       <p>You never create a Tracknite account and you never give us a password. To see public stats, the item shop, the season map and the tournaments calendar, you simply type a username — no sign-in of any kind is required.</p>
@@ -56,9 +56,10 @@
       <p>If you want to see <strong>your own</strong> tournament history and results ("My Events") or the items in your locker ("My Locker"), you can optionally connect your Epic Games account. This is never required to use the app. When you connect:</p>
       <ul>
         <li>Sign-in happens on <strong>Epic's own login page</strong> (opened in your browser) using Epic's official authorization flow. <strong>We never see, ask for, or store your Epic password.</strong></li>
-        <li>Instead of a password, the app receives a revocable access handle. The session token used to talk to Epic on your behalf is held only by our secure proxy server, solely to fetch your tournament data, Sprites and locker — it is never used for advertising and never shared.</li>
+        <li>Instead of a password, the app receives a revocable access handle. The session token used to talk to Epic on your behalf is held only by our secure proxy server, solely to fetch your tournament data, Sprites, locker and season level — it is never used for advertising and never shared.</li>
         <li>Once connected, the app sends your <strong>Epic account identifier</strong> to Epic's public tournament services to retrieve your events, placements, points and team rosters, and the list of in-game Sprites you have collected.</li>
         <li>If you open <strong>My Locker</strong> in the Shop tab, the app asks Epic, through our proxy, for the list of cosmetic items on your account and which Battle Passes and Fortnite Crew months you bought. Our proxy passes this answer straight to your device and does not store it. The locker, with its estimated value, is kept on your device; the list of Battle Pass rewards Epic reported is also saved to your iCloud key-value storage (see below), because Epic stops showing it once a season ends.</li>
+        <li>When you refresh your Profile — also when iOS refreshes the app in the background — the app reads your <strong>current season level</strong> from the same Epic profile, through our proxy, so the level badge is up to date. This happens only for the account you connected, never for players you look up. Our proxy passes the answer straight to your device and does not store it; the app keeps only the level number on your device.</li>
         <li>For duo, trio and squad tournaments, Epic only returns a result when the <strong>whole team</strong> is named. To find yours, the app may send Epic the account identifiers of your teammates — taken from your earlier tournaments, or from a player you search for in an event leaderboard — together with your own. These requests are used only to look up your team's result.</li>
         <li>You can disconnect anytime in <strong>Settings → Epic account</strong>. Disconnecting immediately deletes the stored handle and revokes the session token on our proxy and with Epic.</li>
       </ul>
